@@ -28,4 +28,7 @@ app.get("/", async (req, res) => {
       }
     })
   });
+  
+  // Embed the hugging face embddings.
+  res.json(hfResponse);
 });
