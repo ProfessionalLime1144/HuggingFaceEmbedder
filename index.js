@@ -31,5 +31,5 @@ app.get("/", async (req, res) => {
   
   // Embed the hugging face embddings.
   console.log(hfResponse);
-  res.json(hfResponse);
+  res.json(hfResponse.json());
 });
