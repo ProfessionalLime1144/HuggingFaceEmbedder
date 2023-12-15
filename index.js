@@ -28,8 +28,10 @@ app.get("/", async (req, res) => {
       }
     })
   });
+  const hfData = await hfResponse.json();
   
   // Embed the hugging face embddings.
-  console.log(hfResponse.json());
-  res.json(hfResponse.json());
+  console.log(await hfData);
+  res.json(await hfData);
+
 });
