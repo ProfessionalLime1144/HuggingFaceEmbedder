@@ -8,7 +8,7 @@ app.listen(3000 || process.env.PORT, () => {
   console.log(`Connected to port ${process.env.PORT}.`);
 });
 
-app.post("/", async (req, res) => {
+app.get("/", async (req, res) => {
   try {
     
     // let question = "What was Hitler's role?";
