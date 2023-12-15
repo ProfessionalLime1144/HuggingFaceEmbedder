@@ -38,6 +38,7 @@ app.get("/", async (req, res) => {
     console.log(await hfData);
     res.json(await hfData);
 } catch(err) {
+    console.log(err);
     res.json(err);
   };
 });
