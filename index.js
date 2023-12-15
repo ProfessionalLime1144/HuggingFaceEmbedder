@@ -17,6 +17,7 @@ app.post("/", async (req, res) => {
     
     let question = req.get("question");
     let arrayDocs = req.get("arrayDocs");
+    console.log(arrayDocs);
     
     const hfResponse = await fetch('https://api-inference.huggingface.co/models/sentence-transformers/all-MiniLM-L6-v2', {
       method: 'POST',
